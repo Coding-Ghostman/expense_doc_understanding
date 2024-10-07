@@ -1,0 +1,51 @@
+{
+  "name": "ailanguage",
+  "version": "1.0.0",
+  "description": "Oracle Digital Assistant Component Package",
+  "main": "main.js",
+  "scripts": {
+    "bots-node-sdk": "bots-node-sdk",
+    "help": "npm run bots-node-sdk -- --help",
+    "prepack": "npm run bots-node-sdk -- pack --dry-run",
+    "start": "npm run bots-node-sdk -- service .",
+    "docker-build": "docker-compose build --force-rm --no-cache"
+  },
+  "repository": {},
+  "dependencies": {
+    "@fnproject/fdk": "^0.0.27",
+    "@oracle/bots-node-sdk": "^2.5.5",
+    "axios": "^0.26.1",
+    "express": "^4.17.1",
+    "nodemailer": "^6.6.5",
+    "oci-ailanguage": "^2.5.0",
+    "oci-aivision": "^2.21.0",
+    "oci-common": "^2.5.0",
+    "path": "^0.12.7",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "@fnproject/fdk": "^0.0.27",
+    "@oracle/bots-node-sdk": "^2.5.5",
+    "express": "^4.17.1"
+  },
+  "bundledDependencies": [
+    "@fnproject/fdk",
+    "@oracle/bots-node-sdk",
+    "express",
+    "nodemailer",
+    "oci-ailanguage",
+    "oci-common",
+    "path",
+    "request"
+  ],
+  "bundleDependencies": [
+    "@fnproject/fdk",
+    "@oracle/bots-node-sdk",
+    "express",
+    "nodemailer",
+    "oci-ailanguage",
+    "oci-common",
+    "path",
+    "request"
+  ]
+}
